@@ -1,0 +1,12 @@
+// Buttons style
+
+.v-btn {
+  &--outlined {
+    border-width: 2px !important;
+    border-color: $input-border !important;
+  }
+
+  &.v-size--x-large {
+    font-size: 20px !important;
+  }
+}

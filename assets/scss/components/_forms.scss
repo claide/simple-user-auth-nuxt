@@ -1,0 +1,64 @@
+.field {
+
+  &:not(:last-child) {
+    margin-bottom: 46px;
+  }
+}
+
+.label {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 22px;
+  display: block;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.control {
+  box-sizing: border-box;
+  clear: both;
+  font-size: 20px;
+  position: relative;
+  text-align: inherit;
+}
+
+.input {
+  align-items: center;
+  border: 2px solid transparent;
+  display: inline-flex;
+  font-size: 20px;
+  height: 56px;
+  justify-content: flex-start;
+  line-height: 28px;
+  padding-bottom: calc(.5em - 1px);
+  padding-left: calc(.75em - 1px);
+  padding-right: calc(.75em - 1px);
+  padding-top: calc(.5em - 1px);
+  position: relative;
+  vertical-align: top;
+  max-width: 100%;
+  width: 100%;
+  box-shadow: none;
+  background-color: $white;
+  border-color: $input-border;
+  border-radius: 8px;
+  color: $black;
+  &:focus, &:hover {
+    border-color: $primary;
+    outline: none;
+  }
+
+  &.is-danger {
+    border-color: $error;
+  }
+}
+
+.absolute {
+  position: absolute !important;
+}
+
+.right {
+  right: 0;
+}
